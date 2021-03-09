@@ -64,7 +64,7 @@ const Header = ({ siteTitle }) => (<div className={'relative h-screen w-full'}>
                   <h1 className={'text-7xl text-center md:flex font-extrabold z-40 uppercase'}>
 
                     <span className={'bg-black p-6 pl-8 md:pl-6 block uppercase tracking-widest text-black'} style={{textShadow: '-1px -1px 0 #fff,1px -1px 0 #fff,-1px 1px 0 #fff,1px 1px 0 #fff'}}>Tracing</span>
-                    <span className={'p-6 tracking-wide text-black block text-transparent bg-gray-100'} style={{backgroundImage:"url('../images/white-static.gif')"}}>Shadows</span>
+                    <span className={'p-6 tracking-wide text-black block text-transparent bg-gray-100'} style={{backgroundImage:"url('images/white-static.gif')"}}>Shadows</span>
                   </h1>
       <h2 className={'text-white uppercase font-extralight tracking-widest mt-9 text-lg'}>Toy Bones <span className={'lowercase'}>x</span> Garf</h2>
 
