@@ -3,9 +3,11 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import Layout from "./layout"
+import gsap from 'gsap'
 import { Button } from "../pages"
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, isHome =false }) => (<>{isHome &&(
   <div className={'relative h-screen w-full flex flex-col justify-between'}>
 
     {/*<div className="absolute inset-x-0 bottom-12 z-40">*/}
@@ -63,8 +65,8 @@ const Header = ({ siteTitle }) => (
         <h2 className={'text-white uppercase font-extralight z-40 tracking-widest mt-9 text-lg'}>Toy Bones <span className={'lowercase'}>x</span> Garf</h2>
 
         <div className={'z-40  mt-12 relative text-white flex space-x-8'}>
-          <Button><span className={'inline-block mr-3'}> ✉️</span>️Email updates</Button>
-          <Button><span className={'inline-block mr-3'}> 🎧</span> Stream it</Button>
+          <AniLink paintDrip hex='#ffffff'to={'/subscribe'}><Button><span className={'inline-block mr-3'}> ✉️</span>️Email updates</Button></AniLink>
+         <Button><span className={'inline-block mr-3'}> 🎧</span> Stream it</Button>
         </div>
       </div>
 
@@ -192,11 +194,12 @@ const Header = ({ siteTitle }) => (
 
 
 
-</div>
+</div>)}</>
 )
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
+    isHome: PropTypes.bool
 }
 
 Header.defaultProps = {
