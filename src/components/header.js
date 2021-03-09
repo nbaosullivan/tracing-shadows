@@ -57,19 +57,30 @@ const Header = ({ siteTitle }) => (<div className={'relative h-screen w-full'}>
 
   {/*</header>*/}
 
-    <div className="bg-black z-20 flex items-center justify-center absolute inset-0">
+    <div className="bg-black flex flex-col items-center justify-center absolute inset-0">
+      {/*<video className={'absolute inset-0 h-full w-full z-30 object-cover'}  loop={true} autoPlay={true} playsInline={true}>*/}
+      {/*  <source src="videos/black-static.mp4" type="video/mp4"/>*/}
+      {/*</video>*/}
+                  <h1 className={'text-7xl text-center md:flex font-extrabold z-40 uppercase'}>
 
-                  <h1 className={'text-7xl  text-white text-center md:flex font-extrabold z-30 uppercase'}>
-                    <span className={'bg-black uppercase p-6 pl-8 md:pl-6 block tracking-widest text-black'} style={{textShadow: '-1px -1px 0 #fff,1px -1px 0 #fff,-1px 1px 0 #fff,1px 1px 0 #fff'}}>Tracing</span>
-                    <span className={'p-6 tracking-wide  block text-black bg-gray-100'}>Shadows</span>
+                    <span className={'bg-black p-6 pl-8 md:pl-6 block uppercase tracking-widest text-black'} style={{textShadow: '-1px -1px 0 #fff,1px -1px 0 #fff,-1px 1px 0 #fff,1px 1px 0 #fff'}}>Tracing</span>
+                    <span className={'p-6 tracking-wide  text-black block text-transparent bg-gray-100'} style={{backgroundImage:"url('../images/white-static.gif')"}}>Shadows</span>
                   </h1>
+      <h2 className={'text-white uppercase font-extralight tracking-widest mt-9 text-lg'}>Toy Bones <span className={'lowercase'}>x</span> Garf</h2>
 
     </div>
+
+    {/*<div className={'bg-black opacity-90 inset-0 absolute z-20'}>*/}
+
+    {/*</div>*/}
+    {/*<video className={'absolute inset-0 h-full w-full z-10 object-cover'}  loop={true} autoPlay={true} playsInline={true}>*/}
+    {/*  <source src="videos/black-static.mp4" type="video/mp4"/>*/}
+    {/*</video>*/}
 {/*<StaticImage*/}
 {/*  src="../images/home-bg.jpeg"*/}
 {/*  className={'h-screen w-full z-10'}*/}
 {/*  formats={["AUTO", "WEBP", "AVIF"]}*/}
-{/*  alt="A Gatsby astronaut"*/}
+{/*  alt="Tracing Shadows"*/}
 {/*  objectFit={'cover'}*/}
 {/*/>*/}
 </div>
