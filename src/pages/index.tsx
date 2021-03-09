@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const IndexPage: React.FC<PageProps> = () => (
-  <Layout>
+  <Layout isHome={true}>
     <SEO title="Home" />
     {/*<Section>*/}
     {/*  <div className="flex items-center">*/}
