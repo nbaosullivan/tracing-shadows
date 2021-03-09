@@ -39,20 +39,34 @@ const IndexPage: React.FC<PageProps> = () => (
   </Layout>
 )
 
-
-export const SectionHeading= ({children}) => {
-    return(<h2 className={'text-4xl font-bold w-full text-center mb-20'}>{children}</h2>);
+export const SectionHeading = ({ children }) => {
+  return (
+    <h2 className={"text-4xl font-bold w-full text-center mb-20"}>
+      {children}
+    </h2>
+  )
 }
-const Section = ({children, dark = false}) => {
-    return(<div className={`py-32 ${dark ? 'bg-black text-white' : 'bg-white'}`}><div className={'max-w-6xl mx-auto'}>{children}</div></div>);
+const Section = ({ children, dark = false }) => {
+  return (
+    <div className={`py-32 ${dark ? "bg-black text-white" : "bg-white"}`}>
+      <div className={"max-w-6xl mx-auto"}>{children}</div>
+    </div>
+  )
 }
 
-
-export const Button = ({children}) => {
-    return(<button className={' font-extrabold uppercase border text-lg tracking-wide px-5 py-3'}>{children}</button>);
+export const Button = ({ children }) => {
+  return (
+    <button
+      className={
+        " font-extrabold uppercase border text-lg tracking-wide px-5 py-3"
+      }
+    >
+      {children}
+    </button>
+  )
 }
 
 export const Teaser = () => {
-    return(<></>);
+  return <></>
 }
 export default IndexPage
