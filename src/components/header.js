@@ -8,7 +8,48 @@ import { Button } from "../pages"
 const Header = ({ siteTitle }) => (
   <div className={'relative h-screen w-full flex flex-col justify-between'}>
 
+    <div className="absolute inset-x-0 bottom-12 z-40">
 
+      <div className={'flex space-x-24 justify-center items-center w-full mx-auto max-w-6xl'}>
+        <div className="flex-1 h-full">
+          <div className="bg-white text-black px-8 h-28 flex items-center">
+            <div>
+              <label htmlFor="email" className="block text-sm font-medium text-black">Get the latest straight to your inbox</label>
+              <div className="mt-1 relative">
+                <div className="absolute inset-y-0 left-0 flex items-center pointer-events-none">
+                  <svg className="h-5 w-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                       fill="currentColor" aria-hidden="true">
+                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                  </svg>
+                </div>
+
+                <input type="text" name="email" id="email"
+                       className=" border-b block w-full pl-7 text-lg"
+                       placeholder="you@example.com"/>
+
+
+
+              </div></div>
+          </div>
+          <div className="bg-black text-white py-4 px-8 flex items-center "> <Button>Sign up </Button></div>
+        </div>
+        <div className="flex-1 h-full">
+          <div className="bg-white text-black px-8 h-28 flex items-center">
+            <div>
+
+                <p>Tracing Shadows</p>
+
+                <p>Out now!</p>
+            </div>
+
+
+          </div>
+          <div className="bg-black text-white py-4 px-8 flex items-center "> <Button>Stream it</Button></div>
+        </div>
+      </div>
+
+    </div>
     <div className="w-full h-full relative">
       {/*<video className={'absolute inset-0 h-full w-full z-30 object-cover'}  loop={true} autoPlay={true} playsInline={true}>*/}
       {/*  <source src="videos/black-static.mp4" type="video/mp4"/>*/}
@@ -46,38 +87,41 @@ const Header = ({ siteTitle }) => (
 
 
     </div>
-    <div className="bg-gray-100">
-      <div className="w-full transform shadow -translate-y-16 relative z-40 px-5 max-w-7xl xl:px-32 bg-white  py-16 mx-auto md:flex items-end justify-between -mt-6 space-y-8 md:space-y-0">
-        <div className={'w-full md:w-1/2 flex items-center justify-center'}>
-          <div className={'md:flex items-end'}>
-            <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">Get the latest straight to your inbox</label>
-            <div className="mt-1 relative rounded-md shadow-sm">
-              <div className="absolute inset-y-0 left-0 flex items-center pointer-events-none">
-                <svg className="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                     fill="currentColor" aria-hidden="true">
-                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                </svg>
-              </div>
 
-                <input type="text" name="email" id="email"
-                       className="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-7 sm:text-lg border-gray-300 rounded-md"
-                       placeholder="you@example.com"/>
+    <div className="bg-gray-100 ">
+      <div className="w-full  relative z-40 px-5 max-w-7xl xl:px-32  py-16 mx-auto md:flex items-end justify-between -mt-6 space-y-8 md:space-y-0">
+
+        {/*<div className={'w-full md:w-1/2 flex items-center justify-center'}>*/}
+        {/*  <div className={'md:flex items-end'}>*/}
+        {/*    <div>*/}
+        {/*    <label htmlFor="email" className="block text-sm font-medium text-gray-700">Get the latest straight to your inbox</label>*/}
+        {/*    <div className="mt-1 relative rounded-md shadow-sm">*/}
+        {/*      <div className="absolute inset-y-0 left-0 flex items-center pointer-events-none">*/}
+        {/*        <svg className="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"*/}
+        {/*             fill="currentColor" aria-hidden="true">*/}
+        {/*          <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />*/}
+        {/*          <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />*/}
+        {/*        </svg>*/}
+        {/*      </div>*/}
+
+        {/*        <input type="text" name="email" id="email"*/}
+        {/*               className="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-7 sm:text-lg border-gray-300 rounded-md"*/}
+        {/*               placeholder="you@example.com"/>*/}
 
 
 
-            </div></div>
-            <div className={'mt-5 md:mt-0 md:ml-4 xl:ml-8'}>
-            <Button>Sign up </Button>
+        {/*    </div></div>*/}
+        {/*    <div className={'mt-5 md:mt-0 md:ml-4 xl:ml-8'}>*/}
+        {/*    <Button>Sign up </Button>*/}
 
-            </div>
-          </div>
-        </div>
-        <div className={'w-full md:w-1/2 flex items-center justify-center '}>
-          <span className={'mr-3 text-sm text-gray-700'}>Tracing Shadows - Out now</span>
-          <Button>Stream it</Button>
-        </div>
+        {/*    </div>*/}
+        {/*  </div>*/}
+        {/*</div>*/}
+        {/*<div className={'w-full md:w-1/2 flex items-center justify-center '}>*/}
+        {/*  <span className={'mr-3 text-sm text-gray-700'}>Tracing Shadows - Out now</span>*/}
+        {/*  <Button>Stream it</Button>*/}
+        {/*</div>*/}
+
 
 
 
