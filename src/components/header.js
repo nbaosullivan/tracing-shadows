@@ -9,7 +9,7 @@ const Header = ({ siteTitle }) => (
   <div className={'relative h-screen w-full flex flex-col justify-between'}>
 
 
-    <div className=" w-full h-full relative">
+    <div className="w-full h-full relative">
       {/*<video className={'absolute inset-0 h-full w-full z-30 object-cover'}  loop={true} autoPlay={true} playsInline={true}>*/}
       {/*  <source src="videos/black-static.mp4" type="video/mp4"/>*/}
       {/*</video>*/}
@@ -25,13 +25,16 @@ const Header = ({ siteTitle }) => (
       <div className={'bg-black opacity-90 absolute z-30 border-8 inset-0 border-gray-100'}>
 
       </div>
-      <StaticImage
-        src="../images/home-bg.jpeg"
-        className={'h-full w-full z-10 absolute inset-0  border-8'}
-        formats={["AUTO", "WEBP", "AVIF"]}
-        alt="Tracing Shadows"
-        objectFit={'cover'}
-      />
+      <div className={'absolute inset-0 border-8 border-white z-10'}>
+        <StaticImage
+          src="../images/home-bg.jpeg"
+          className={'h-full w-full'}
+          formats={["AUTO", "WEBP", "AVIF"]}
+          alt="Tracing Shadows"
+          objectFit={'cover'}
+        />
+      </div>
+
     </div>
     <div className={'absolute inset-x-0 top-0 z-40 '}>
     <div className={'text-gray-200 z-40 text-right flex items-end md:justify-end pt-8 pr-8'}>
