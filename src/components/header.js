@@ -63,8 +63,8 @@ const Header = ({ siteTitle }) => (
         <h2 className={'text-white uppercase font-extralight z-40 tracking-widest mt-9 text-lg'}>Toy Bones <span className={'lowercase'}>x</span> Garf</h2>
 
         <div className={'z-40  mt-12 relative text-white flex space-x-8'}>
-          <Button>Email updates</Button>
-          <Button>Stream it</Button>
+          <Button><span className={'inline-block mr-3'}> ✉️</span>️Email updates</Button>
+          <Button><span className={'inline-block mr-3'}> 🎧</span> Stream it</Button>
         </div>
       </div>
 
