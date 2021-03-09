@@ -49,7 +49,7 @@ const Section = ({children, dark = false}) => {
 
 
 export const Button = ({children}) => {
-    return(<button className={'border px-5 py-3 mt-8'}>{children}</button>);
+    return(<button className={'text-gray-900 font-extrabold uppercase border text-lg tracking-wide px-5 py-3'}>{children}</button>);
 }
 
 export const Teaser = () => {
