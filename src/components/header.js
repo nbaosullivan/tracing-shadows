@@ -57,9 +57,12 @@ const Header = ({ siteTitle }) => (<div className={'relative h-screen w-full'}>
 
   {/*</header>*/}
 
-    <div className="bg-gradient-to-t from-gray-900 via-black to-gray-900 z-20 flex items-center justify-center absolute inset-0">
+    <div className="bg-black z-20 flex items-center justify-center absolute inset-0">
 
-                  <h1 className={'transform -rotate-3 text-7xl animate-pulse-slow text-white text-center md:flex font-bold z-30 uppercase'}><span className={'uppercase p-5 pl-6  block tracking-widest'}>Tracing</span><span className={'p-5 tracking-wide  block text-black bg-gray-100'}>Shadows</span></h1>
+                  <h1 className={'text-7xl  text-white text-center md:flex font-extrabold z-30 uppercase'}>
+                    <span className={'bg-black uppercase p-6 pl-8 md:pl-6 block tracking-widest text-black'} style={{textShadow: '-1px -1px 0 #fff,1px -1px 0 #fff,-1px 1px 0 #fff,1px 1px 0 #fff'}}>Tracing</span>
+                    <span className={'p-6 tracking-wide  block text-black bg-gray-100'}>Shadows</span>
+                  </h1>
 
     </div>
 {/*<StaticImage*/}

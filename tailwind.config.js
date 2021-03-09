@@ -14,7 +14,7 @@ module.exports = {
     },
     extend: {
       animation: {
-        'pulse-slow': 'pulse 3s linear infinite',
+        'pulse-slow': 'pulse 3.5s linear infinite',
       }
     }
   },
