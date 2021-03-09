@@ -19,7 +19,7 @@ module.exports = {
     }
   },
   variants: {
-    extend: {},
+    extend: {      transform: ['responsive']},
   },
   plugins: [],
 }
